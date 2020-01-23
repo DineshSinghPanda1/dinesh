@@ -1,0 +1,75 @@
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<style type="text/css">
+ .trafficlight
+{
+
+ height: 150px;
+  width: 100px;
+  float: left;
+  background: #333;
+  border-radius: 20px;
+  margin: 10px 0;
+  padding: 30px;
+}
+
+.lightoff
+{
+  width:20px;
+  height:20px;
+  border:1px solid;
+  margin-left:auto;
+  margin-right:auto;
+  border-radius: 50px;
+}
+
+#red
+{
+  background:red;
+}
+#yellow
+{
+  background:yellow;
+}
+#green
+{
+  background:green;
+}
+
+
+</style>
+</head>
+
+<body>
+  <h1 class="a">  </h1>
+
+<div class="trafficlight">
+  <div class="lightoff" id="red"></div>
+  <div class="lightoff" id="yellow"></div>
+  <div class="lightoff" id="green"></div>
+</div>
+
+
+
+</body>
+<script>
+$(document).ready(function(){
+  $("#red").click(function(){
+    $(".a").text("You click on red");
+    $("#yellow").click(function(){
+    $(".a").text("You click on yellow");
+    $("#green").click(function(){
+    $(".a").text("You click on green");
+    });
+
+  });
+});
+
+});
+
+
+
+</script>
+
+</html>
